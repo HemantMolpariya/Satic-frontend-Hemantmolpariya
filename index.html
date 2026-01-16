@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Internship Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="page-wrapper">
+
+  <!-- 🔔 Notification -->
+  <div class="notification success" id="notification">
+    <span id="notificationText"></span>
+    <button class="close-btn" id="closeNotification">×</button>
+  </div>
+
+  <!-- Go-to-Top Button -->
+  <button id="goToTopBtn" class="go-to-top-btn">↑</button>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">SATIC</div>
+
+    <form class="search-bar" id="searchForm">
+      <input type="text" id="searchInput" placeholder="Search..." />
+      <button type="submit">🔍</button>
+    </form>
+
+    <button class="hamburger" id="hamburger">☰</button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </header>
+
+  <!-- PAGE CONTENT -->
+  <div class="page-content">
+
+    <main class="content">
+      <h1>Frontend Internship</h1>
+      <p>Name: <strong> Manmeet kaur</strong></p>
+
+      <!-- FORM -->
+      <section class="form-section">
+        <h2>Basic Form Submission</h2>
+
+        <form id="basicForm" class="basic-form">
+          <div class="form-group">
+            <label for="username">Your Name</label>
+            <input type="text" id="username" placeholder="Enter your name" />
+            <small class="error-text" id="nameError">Name is required</small>
+          </div>
+
+          <button type="submit" id="submitBtn" disabled>Submit</button>
+        </form>
+      </section>
+
+      <!-- DEMO BUTTONS -->
+      <div class="demo-buttons">
+        <button class="primary-btn" onclick="showSuccess()">Show Success</button>
+        <button class="error-btn" onclick="showError()">Show Error</button>
+      </div>
+    </main>
+
+    <!-- CARDS -->
+    <section class="cards-section">
+      <h2 class="section-title">Our Services</h2>
+
+      <div class="cards-grid">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Web Development">
+          <div class="card-body">
+            <h3>Web Development</h3>
+            <p>Build responsive modern websites.</p>
+            <button class="card-btn">Learn More</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="UI/UX Design">
+          <div class="card-body">
+            <h3>UI / UX Design</h3>
+            <p>Clean and intuitive designs.</p>
+            <button class="card-btn">Learn More</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1505685296765-3a2736de412f">
+          <div class="card-body">
+            <h3>Responsive Layouts</h3>
+            <p>Works on all devices.</p>
+            <button class="card-btn">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-column">
+        <h3>SATIC</h3>
+        <p>Frontend Internship Project</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Docs</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 Manmeet. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
